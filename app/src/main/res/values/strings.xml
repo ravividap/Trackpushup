@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Track Pushup</string>
+    <string name="pushups">PUSH-UPS</string>
+    <string name="reset">RESET</string>
+    <string name="get_into_position">Get into push-up position</string>
+    <string name="starting_camera">Starting camera…</string>
+</resources>
