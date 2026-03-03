@@ -4,4 +4,13 @@
     <string name="reset">RESET</string>
     <string name="get_into_position">Get into push-up position</string>
     <string name="starting_camera">Starting camera…</string>
+    <string name="start_session">START SESSION</string>
+    <string name="stop_session">STOP SESSION</string>
+    <string name="workout_complete">Workout Complete! 🎉</string>
+    <string name="push_ups_done">PUSH-UPS</string>
+    <string name="calories_burned">KCAL BURNED</string>
+    <string name="duration">DURATION</string>
+    <string name="new_session">NEW SESSION</string>
+    <string name="timer_default">00:00</string>
+    <string name="session_hint">Tap START SESSION to begin tracking</string>
 </resources>
