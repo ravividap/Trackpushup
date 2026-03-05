@@ -26,6 +26,8 @@ object PoseLandmarkAdapter {
         add("RIGHT_WRIST",    PoseLandmark.RIGHT_WRIST)
         add("LEFT_HIP",       PoseLandmark.LEFT_HIP)
         add("RIGHT_HIP",      PoseLandmark.RIGHT_HIP)
+        add("LEFT_KNEE",      PoseLandmark.LEFT_KNEE)
+        add("RIGHT_KNEE",     PoseLandmark.RIGHT_KNEE)
         add("LEFT_ANKLE",     PoseLandmark.LEFT_ANKLE)
         add("RIGHT_ANKLE",    PoseLandmark.RIGHT_ANKLE)
 
