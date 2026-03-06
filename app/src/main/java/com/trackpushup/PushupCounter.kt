@@ -26,17 +26,17 @@ data class Landmark(val x: Float, val y: Float, val confidence: Float)
  * Use [PoseLandmarkAdapter.fromMlKitPose] to convert an ML Kit
  * [com.google.mlkit.vision.pose.Pose] into the map expected by [processLandmarks].
  */
-class PushupCounter {
+class PushupCounter : ExerciseCounter {
 
     enum class PushupState { IDLE, UP, DOWN }
 
     private var state: PushupState = PushupState.IDLE
     private var formGoodDuringDown = false
-    var count: Int = 0
+    override var count: Int = 0
         private set
 
     /** Feedback message for the user. */
-    var feedback: String = "Get into push-up position"
+    override var feedback: String = "Get into push-up position"
         private set
 
     /**
@@ -46,7 +46,7 @@ class PushupCounter {
      * LEFT_SHOULDER, RIGHT_SHOULDER, LEFT_ELBOW, RIGHT_ELBOW, LEFT_WRIST,
      * RIGHT_WRIST, LEFT_HIP, RIGHT_HIP, LEFT_ANKLE, RIGHT_ANKLE.
      */
-    fun processLandmarks(landmarks: Map<String, Landmark>): Int {
+    override fun processLandmarks(landmarks: Map<String, Landmark>): Int {
         val leftShoulder  = landmarks["LEFT_SHOULDER"]  ?: return count
         val rightShoulder = landmarks["RIGHT_SHOULDER"] ?: return count
         val leftElbow     = landmarks["LEFT_ELBOW"]     ?: return count
@@ -121,7 +121,7 @@ class PushupCounter {
     }
 
     /** Reset counter and state. */
-    fun reset() {
+    override fun reset() {
         count = 0
         state = PushupState.IDLE
         formGoodDuringDown = false

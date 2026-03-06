@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Track Pushup</string>
+    <string name="app_name">Track Workout</string>
     <string name="pushups">PUSH-UPS</string>
     <string name="reset">RESET</string>
     <string name="get_into_position">Get into push-up position</string>
@@ -8,9 +8,16 @@
     <string name="stop_session">STOP SESSION</string>
     <string name="workout_complete">Workout Complete! 🎉</string>
     <string name="push_ups_done">PUSH-UPS</string>
+    <string name="squats_done">SQUATS</string>
     <string name="calories_burned">KCAL BURNED</string>
     <string name="duration">DURATION</string>
     <string name="new_session">NEW SESSION</string>
     <string name="timer_default">00:00</string>
     <string name="session_hint">Tap START SESSION to begin tracking</string>
+    <string name="choose_workout">Choose Workout</string>
+    <string name="choose_workout_hint">Select an exercise to get started</string>
+    <string name="workout_pushup">Push-Ups 💪</string>
+    <string name="workout_squat">Squats 🏋️</string>
+    <string name="title_pushup">Track Push-Ups</string>
+    <string name="title_squat">Track Squats</string>
 </resources>
